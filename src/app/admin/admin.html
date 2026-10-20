@@ -1,0 +1,20 @@
+<div class="d-flex flex-column min-vh-100 bg-dark">
+  
+  <app-navbar></app-navbar>
+
+  <!-- Pake flex-column flex-md-row biar responsif -->
+  <div class="d-flex flex-column flex-md-row flex-grow-1">
+    
+    <!-- Sidebar: Di HP numpuk di atas, di Laptop pindah ke kiri -->
+    <app-sidebar></app-sidebar>
+
+    <!-- Konten Kanan: Mencegah overflow dan membiarkan scroll vertikal normal -->
+    <main class="flex-grow-1 p-2 p-md-4" style="overflow-x: hidden; min-width: 0;">
+      <app-content></app-content>
+    </main>
+
+  </div>
+
+  <app-footer></app-footer>
+  
+</div>
